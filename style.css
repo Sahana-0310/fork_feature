@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f3f6fb;
+  color: #172033;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  width: min(720px, calc(100% - 32px));
+  margin: 48px auto;
+}
+
+header {
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  color: #315fce;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+h1 {
+  margin: 4px 0;
+  font-size: clamp(28px, 5vw, 40px);
+}
+
+.subtitle {
+  color: #667085;
+  margin-top: 6px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e4e9f2;
+  border-radius: 14px;
+  padding: 24px;
+  margin: 18px 0;
+  box-shadow: 0 8px 24px rgba(25, 45, 80, 0.05);
+}
+
+h2 {
+  margin: 0 0 16px;
+  font-size: 19px;
+}
+
+label {
+  display: block;
+  margin: 14px 0 6px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccd4e0;
+  border-radius: 8px;
+  font: inherit;
+}
+
+input:focus {
+  outline: 2px solid #b9cbff;
+  border-color: #315fce;
+}
+
+button {
+  margin-top: 18px;
+  padding: 11px 16px;
+  border: 0;
+  border-radius: 8px;
+  background: #315fce;
+  color: white;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #244ba8;
+}
+
+.list-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.count {
+  color: #667085;
+  font-size: 13px;
+}
+
+.student-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.student-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 13px 0;
+  border-top: 1px solid #edf0f5;
+}
+
+.student-info strong,
+.student-info span {
+  display: block;
+}
+
+.student-info span,
+.empty,
+.message {
+  color: #667085;
+  font-size: 14px;
+}
+
+.remove-button {
+  margin: 0;
+  padding: 7px 10px;
+  background: #fff0f0;
+  color: #b42318;
+  font-size: 13px;
+}
+
+.remove-button:hover {
+  background: #ffe0df;
+}
+
+.message {
+  min-height: 18px;
+  margin-bottom: 0;
+}
+
+footer {
+  text-align: center;
+  color: #7b8495;
+  font-size: 13px;
+  padding: 18px;
+}

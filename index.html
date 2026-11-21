@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Management App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <p class="eyebrow">SAMPLE PROJECT</p>
+      <h1>Student Management</h1>
+      <p class="subtitle">Add students and keep a simple class list.</p>
+    </header>
+
+    <section class="card">
+      <h2>Add a student</h2>
+      <form id="student-form">
+        <label for="student-name">Student name</label>
+        <input id="student-name" type="text" placeholder="e.g. Asha Rao" required>
+
+        <label for="student-course">Course</label>
+        <input id="student-course" type="text" placeholder="e.g. Computer Science" required>
+
+        <button type="submit">Add student</button>
+      </form>
+      <p id="message" class="message" role="status"></p>
+    </section>
+
+    <section class="card">
+      <div class="list-heading">
+        <h2>Students</h2>
+        <span id="student-count" class="count">0 students</span>
+      </div>
+      <ul id="student-list" class="student-list">
+        <li class="empty">No students yet. Add one above!</li>
+      </ul>
+    </section>
+
+    <footer>Built with HTML, CSS and JavaScript.</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
